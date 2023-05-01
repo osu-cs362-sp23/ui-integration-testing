@@ -1,0 +1,12 @@
+{
+  "name": "ui-integration-testing",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Hess <hessro@oregonstate.edu>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
