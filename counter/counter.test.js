@@ -18,13 +18,24 @@ function initDomFromFiles(htmlPath, jsPath) {
     })
 }
 
-test("counter increments when clicked", async function () {
+test("counter increments when clicked (by role)", async function () {
     initDomFromFiles(
         __dirname + "/counter.html",
         __dirname + "/counter.js"
     )
     const counter = domTesting.getByRole(document, "button")
     expect(counter).toHaveTextContent("0")
+    const user = userEvent.setup()
+    await user.click(counter)
+    expect(counter).toHaveTextContent("1")
+})
+
+test("counter increments when clicked (by text)", async function () {
+    initDomFromFiles(
+        __dirname + "/counter.html",
+        __dirname + "/counter.js"
+    )
+    const counter = domTesting.getByText(document, "0")
     const user = userEvent.setup()
     await user.click(counter)
     expect(counter).toHaveTextContent("1")
