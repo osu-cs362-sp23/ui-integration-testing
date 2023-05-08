@@ -15,7 +15,7 @@ form.addEventListener("submit", function (event) {
 
 function insertNewPhotoCard(url, caption) {
     const photoItem = document.createElement("li")
-    photoItem.classList.add("photo-card")
+    photoItem.classList.add("photo-card", "second-class")
 
     const photoImg = document.createElement("img")
     photoImg.src = url

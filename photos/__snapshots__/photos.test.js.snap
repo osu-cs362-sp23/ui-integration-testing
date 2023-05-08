@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`inserts multiple photo cards 1`] = `
+<ul
+  id="photo-card-list"
+>
+  <li
+    class="photo-card second-class"
+  >
+    <img
+      alt="Cute kitty #1"
+      src="http://placekitten.com/480/480?image=1"
+    />
+    <p>
+      Cute kitty #1
+    </p>
+  </li>
+  <li
+    class="photo-card second-class"
+  >
+    <img
+      alt="Cute kitty #2"
+      src="http://placekitten.com/480/480?image=2"
+    />
+    <p>
+      Cute kitty #2
+    </p>
+  </li>
+</ul>
+`;
